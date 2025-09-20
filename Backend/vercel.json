@@ -4,7 +4,8 @@
     { "src": "backend/index.js", "use": "@vercel/node" }
   ],
   "routes": [
-    { "src": "/contact", "dest": "/backend/index.js" }
+    { "src": "/contact", "dest": "backend/index.js" }
   ]
 }
+
 
