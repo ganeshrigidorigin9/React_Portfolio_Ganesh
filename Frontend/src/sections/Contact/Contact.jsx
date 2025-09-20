@@ -14,9 +14,13 @@ function Contact() {
     const formData = { name, email, message };
 
     try {
-      await axios.post('/contact', formData, {
-      headers: { 'Content-Type': 'application/json' },
-  });
+      // Replace localhost with your deployed Vercel URL
+   const response = await axios.post(
+  'https://portfolio-react-flax-iota.vercel.app/contact',
+  formData,
+  { headers: { 'Content-Type': 'application/json' } }
+);
+
 
 
       if (response.data.success) {
